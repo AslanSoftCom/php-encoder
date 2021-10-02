@@ -67,6 +67,32 @@ $connect->urlencode(true);
 $connect->rawurlencode(true);
 
 ```
+
+# Multiple Encrypt
+
+```javascript
+$Text = "THE ENCRYPTED WORD";
+$connect->openssl("YOUR_KEYWORD");
+$connect->base64(true);
+$connect->gzcompress(true);
+connecti->serialize(true);
+$connect->urlencode(true);
+$connect->rawurlencode(true);
+echo $i->encrypt($Text);
+```
+# Multiple Decrypt
+
+```javascript
+$encrypted = "ENCRYPTED_WORD";
+$connect->openssl("YOUR_KEYWORD");
+$connect->base64(true);
+$connect->gzcompress(true);
+connecti->serialize(true);
+$connect->urlencode(true);
+$connect->rawurlencode(true);
+echo $i->decrypt($encrypted);
+```
+
 # [![bitcoin-black](https://i.hizliresim.com/goezfoq.png)]
 
 
